@@ -1,0 +1,124 @@
+@corvette_scale = 1.00
+@destroyer_scale = 1.0
+@cruiser_scale = 2.5
+@battleship_scale = 1.0
+@missile_scale = 1.0
+@transport_scale = 1.25
+@colonizer_scale = 1.0
+@science_scale = 1.0
+@constructor_scale = 2.0
+
+	@mamcruiser_scale = 1.0
+	@mamdestroyer_scale = 1.0
+	@mamcorvette_scale = 1.0
+
+	@artcruiser_scale = 1.0
+	@artdestroyer_scale = 1.0
+	@artcorvette_scale = 1.0
+	@artbattleship_scale = 1.0
+
+	@molcorvette_scale = 1.0
+	@molcruiser_scale = 0.9
+	@moldestroyer_scale = 1.0
+	@molbattleship_scale = 0.95
+ 
+
+	@avibattleship_scale = 1.1
+	@avicruiser_scale = 1.0
+	@avicorvette_scale = 1.0
+	
+	@funcruiser_scale = 1.00
+	
+#	@mamcruiser_scale = 2.5
+#	@molcruiser_scale = 2.5
+#	@artdestroyer_scale = 2.5
+#	@avicruiser_scale = 2.5
+#	@artcruiser_scale = 2.5
+
+entity = {
+	name = "DestroyerClassA_entity"
+	pdxmesh = "molluscoid_01_destroyer_frame_mesh"
+	
+	default_state = "idle" 
+	state = { name = "idle" animation = "idle" animation_blend_time = 0.25 }
+	
+	attach = { part1 = "destroyer_bow_S3_entity" }
+	attach = { part2 = "destroyer_stern_S2_entity" }
+	
+	#scale = 1
+	scale = @moldestroyer_scale
+}
+
+entity = {
+	name = "DestroyerClassS_entity"
+	pdxmesh = "molluscoid_01_destroyer_frame_mesh"
+	
+	default_state = "idle" 
+	state = { name = "idle" animation = "idle" animation_blend_time = 0.25 }
+	
+	attach = { part1 = "destroyer_bow_S3_entity" }
+	attach = { part2 = "destroyer_stern_S2_entity" }
+	
+	#scale = 1
+	scale = @moldestroyer_scale
+}
+
+entity = {
+	name = "BattleshipClassS_entity"
+	pdxmesh = "arthropoid_01_battleship_frame_mesh"
+	
+	default_state = "idle" 
+	state = { name = "idle" animation = "idle" animation_blend_time = 0.25 }
+	
+	attach = { part1 = "arthropoid_01_battleship_bow_L1M1S2_entity" }
+	attach = { part2 = "arthropoid_01_battleship_mid_L2S4_entity" }
+	attach = { part3 = "arthropoid_01_battleship_stern_L1_entity" }
+	#scale = 0.5
+	#scale = 1
+	scale = @molbattleship_scale
+}
+
+entity = {
+	name = "BattleshipClassA_entity"
+	pdxmesh = "arthropoid_01_battleship_frame_mesh"
+	
+	default_state = "idle" 
+	state = { name = "idle" animation = "idle" animation_blend_time = 0.25 }
+	
+	attach = { part1 = "arthropoid_01_battleship_bow_L1M1S2_entity" }
+	attach = { part2 = "arthropoid_01_battleship_mid_L2S4_entity" }
+	attach = { part3 = "arthropoid_01_battleship_stern_L1_entity" }
+	#scale = 0.5
+	#scale = 1
+	scale = @molbattleship_scale
+}
+
+entity = {
+	name = "CruiserClassS_entity"
+	pdxmesh = "arthropoid_01_cruiser_frame_mesh"
+	
+	default_state = "idle" 
+	state = { name = "idle" animation = "idle" animation_blend_time = 0.25 }
+	
+	attach = { part1 = "arthropoid_01_cruiser_bow_L1_entity" }
+	attach = { part2 = "arthropoid_01_cruiser_mid_M3_entity" }
+	attach = { part3 = "arthropoid_01_cruiser_stern_S2_entity" }
+	
+	#scale = 1
+	scale = @artcruiser_scale
+}
+
+entity = {
+	name = "CruiserClassA_entity"
+	pdxmesh = "arthropoid_01_cruiser_frame_mesh"
+	
+	default_state = "idle" 
+	state = { name = "idle" animation = "idle" animation_blend_time = 0.25 }
+	
+	attach = { part1 = "arthropoid_01_cruiser_bow_L1_entity" }
+	attach = { part2 = "arthropoid_01_cruiser_mid_M3_entity" }
+	attach = { part3 = "arthropoid_01_cruiser_stern_S2_entity" }
+	
+	#scale = 1
+	scale = @artcruiser_scale
+}

@@ -1,0 +1,18 @@
+﻿l_english:
+ ####################################
+ # Alpha Naming Convention - WILL LIKELY BE CHANGED IF SECTIONS ARE REDESIGNED
+ #
+ # Mid sections have a flavor-name fitting to number of weapon/utility slots followed by the key-word "Core"
+ # Front sections have a flavor-name followed by the key-word "Breaker"
+ # Rear sections have a flavor-name followed by the key-word "Bulwark"
+ #
+ ####################################
+
+ ####################################
+ # Destroyer
+ #################################### 
+ destroyerClass2_BOW_M1S2:0 "Fortune Breaker"
+ destroyerClass2_BOW_S3:0 "Hope Breaker"
+ destroyerClass2_BOW_L1:0 "Faith Breaker"
+ destroyerClass2_STERN_S2:0 "Flash Bulwark"
+ destroyerClass2_STERN_M1:0 "Shine Bulwark"
